@@ -1,0 +1,35 @@
+abstract final class RouteNames {
+  static const onboardingIntro = 'onboarding-intro';
+  static const onboardingInterests = 'onboarding-interests';
+  static const home = 'home';
+  static const search = 'search';
+  static const favorites = 'favorites';
+  static const cart = 'cart';
+  static const categories = 'categories';
+  static const stores = 'stores';
+  static const profile = 'profile';
+  static const productDetail = 'product-detail';
+  static const catalog = 'catalog';
+  static const checkoutShipping = 'checkout-shipping';
+  static const checkoutPayment = 'checkout-payment';
+  static const checkoutSuccess = 'checkout-success';
+  static const addPaymentMethod = 'add-payment-method';
+}
+
+abstract final class RoutePaths {
+  static const onboarding = '/onboarding';
+  static const interests = 'interests';
+  static const home = '/home';
+  static const search = '/search';
+  static const favorites = '/favorites';
+  static const cart = '/cart';
+  static const categories = '/categories';
+  static const stores = '/stores';
+  static const profile = '/profile';
+  static const productDetail = '/products/:productId';
+  static const catalog = '/catalog';
+  static const checkoutShipping = '/checkout/shipping';
+  static const checkoutPayment = '/checkout/payment';
+  static const checkoutSuccess = '/checkout/success';
+  static const addPaymentMethod = '/checkout/payment/add';
+}
