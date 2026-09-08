@@ -1,6 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../features/auth/presentation/pages/forgot_password_page.dart';
+import '../../features/auth/presentation/pages/login_page.dart';
+import '../../features/auth/presentation/pages/register_page.dart';
 import '../../features/onboarding/presentation/pages/onboarding_interests_page.dart';
 import '../../features/onboarding/presentation/pages/onboarding_intro_page.dart';
 import '../../features/cart/presentation/pages/cart_page.dart';
@@ -17,8 +20,23 @@ import 'route_names.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
-    initialLocation: RoutePaths.onboarding,
+    initialLocation: RoutePaths.login,
     routes: [
+      GoRoute(
+        name: RouteNames.login,
+        path: RoutePaths.login,
+        builder: (context, state) => const LoginPage(),
+      ),
+      GoRoute(
+        name: RouteNames.forgotPassword,
+        path: RoutePaths.forgotPassword,
+        builder: (context, state) => const ForgotPasswordPage(),
+      ),
+      GoRoute(
+        name: RouteNames.register,
+        path: RoutePaths.register,
+        builder: (context, state) => const RegisterPage(),
+      ),
       GoRoute(
         name: RouteNames.onboardingIntro,
         path: RoutePaths.onboarding,

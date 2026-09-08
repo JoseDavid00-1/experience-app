@@ -1,6 +1,9 @@
 abstract final class RouteNames {
   static const onboardingIntro = 'onboarding-intro';
   static const onboardingInterests = 'onboarding-interests';
+  static const login = 'login';
+  static const forgotPassword = 'forgot-password';
+  static const register = 'register';
   static const home = 'home';
   static const search = 'search';
   static const favorites = 'favorites';
@@ -19,6 +22,9 @@ abstract final class RouteNames {
 abstract final class RoutePaths {
   static const onboarding = '/onboarding';
   static const interests = 'interests';
+  static const login = '/login';
+  static const forgotPassword = '/forgot-password';
+  static const register = '/register';
   static const home = '/home';
   static const search = '/search';
   static const favorites = '/favorites';
